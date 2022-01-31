@@ -95,6 +95,15 @@
                         </div>
                     </form>
 
+                    <div class="navbar">
+                        <ul>
+                            <li>
+                                <?php $keranjang = 'Keranjang Belanja : ' . $this->cart->total_items() . ' Items' ?>
+                                <?php echo anchor('dashboard/detail_keranjang', $keranjang) ?>
+                            </li>
+                        </ul>
+                    </div>
+
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
