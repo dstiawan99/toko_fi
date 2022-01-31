@@ -27,4 +27,12 @@ class Dashboard extends CI_Controller
 		$this->cart->insert($data);
 		redirect('dashboard');
 	}
+
+	public function detail_keranjang()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('templates/sidebar');
+		$this->load->view('detail_keranjang');
+		$this->load->view('templates/footer');
+	}
 }
